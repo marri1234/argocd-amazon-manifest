@@ -12,7 +12,7 @@ node {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     withCredentials([usernamePassword(credentialsId: 'marri-GitHub', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
                         //script {def encodedPassword = URLEncoder.encode("$GIT_PASSWORD",'UTF-8')}
-                        //script  {def IMAGE='ooghenekaro/amazon'}
+                        //script  {def IMAGE='rpsj123/amazon1'}
                         sh "git config user.email sairammarri05@gmail.com"
                         sh "git config user.name marri1234"
                         //sh "git switch master"
